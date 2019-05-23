@@ -1,0 +1,58 @@
+<!--
+   onnierD           erD        nnier    d Pro nierDa  d Pronn            nnierDavid   onnierDavi       ierDav   Pronn   David  ronni   avid P onnier  vid Pronnie  avid Pronn
+    Pronnier        onnie       Pronn    avid  ronnie  avid Pron           ronnierDav   PronnierDa     ronnierD  id Pr   ierDav d Pro   erDavi  Pronn  rDavid Pronn erDavid Pro
+   vid Pronni        Pron          Pr     rD     Pro   erDavid Pr          d Pr    erD  id     nie    id P  nnie  avid    nnie   vid P   nier   id P   nier    d Pr  nie    id
+   rDav   Pron     avid P         vid    nni     id    nnie   vid          avid Pronni  David Pron    Dav    ron  erDavi  Pro    rDavid  ron     avi    onn          ronnierDav
+    ier   id P     erD vid         Dav   Pr     rDa     ron   rDav         erDavid Pr   ierDavid     nier    d Pr nnierDa id     nierDav d P    ier      Pronn       d Pronnie
+    onn    avi    onnierDav        ier  vid      ier    d P    ier         nnierDavi    onnierDa     ronn    avid Pronnie Dav    ronnier avi     nni    vid Pro      avid Pro
+     Pr   ierD     Pronnier         nnierD       on     avi   ronn         Pro           Pronnier      Pr    erD  id  ronnier    d P onnierD     Pr     rDavid       erDavid P
+   avid  ronni   avid   onni        Pronn         P    ierD  id Pr         id           vid   onn  r  vid    nni  Dav d Pronn    avi  Pronni     id     nie          nni   avi  P
+  ierDavid Pro   erD     Pro         d Pr       avid  ronnierDavid         Dav          rDa    Pronn  rDav   Pro  ier  vid Pr    erD  id Pro    rDav    ronn    avi  Pro   erDavi
+  onnierDavid  ronnie   vid Pr       avi       ierDav d PronnierD         nierDa       nnier  vid Pr   ierDavid  ronni  David   onnie  avid    nnierD  id Pron ierD vid P  nnierD
+   Pronnier    d Pron   rDavid        r        onnierDavid Pron           ronnie       Pronn   Davi     nnierD   d Pro   erDa    Pron   rDav   Pronnie David Pronni rDavi   ronn
+
+-->
+
+<p></p>
+
+<div id="contenaires" style="text-align: center">
+
+    <div ng-app="app">
+        <style type="text/css">.ng-invalid { border-color: #B94A48; }</style>
+
+        <h1>Connexion au site</h1>
+
+        <form name="Connexion" ng-controller="ListeCheckConnexionControlleur" ng-submit="soumission()">
+            <div class="form-group">
+                <label for="User_Pseudo">Pseudo :</label>
+                <input type="text" name="User_Pseudo" class="form-control" id="User_Pseudo" placeholder="Votre Pseudo" ng-model="User_Pseudo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="User_Password">Password :</label>
+                <input type="password" name="User_Password" class="form-control" id="User_Password" placeholder="Votre mot de passe" ng-model="User_Password" required>
+            </div>
+
+            <input id="co" class="btn btn-default" type="submit" value="Envoyer">
+            <p></p>
+        </form>
+
+        <script>
+            function Controleur($scope) {
+                $scope.message = '';
+                $scope.soumission = function (valid) {
+                    if(valid) {
+                        $scope.messageClass='alert-success';
+                        $scope.message = 'Merci ' + $scope.user.nom + ' connexion OK !';
+                    }
+                    else {
+                        $scope.messageClass='alert-danger';
+                        $scope.message = 'Désolé, données non valides !';
+                    }
+                };
+            }
+        </script>
+
+    </div>
+
+</div>

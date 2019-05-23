@@ -1,0 +1,112 @@
+<p></p>
+
+<div id="contenaires" style="text-align: center">
+
+    <!--
+    <div class="div1" data-ng-app="monAppli" data-ng-init="name=" data-ng-controller="monControlleur">
+    -->
+
+    <p>Gestion des Utilisateurs : </p>
+    <div id="chargement" data-ng-if="chargement"></div>
+
+    <p><h1>{{loader}}</h1></p>
+
+    <p>
+    <ol>
+        <li data-ng-repeat="film in films"> {{utilisateur}} </li>
+    </ol>
+    </p>
+
+    <p> <input type="text" placeholder="Entrer un Utilisateur..." required name="ajoutUtilisateur" data-ng-model="ajoutUtilisateur"> </p>
+    <p> <button data-ng-click="ajouterUtilisateur()"> Ajouter un utilisateur </button> </p>
+
+    <!--
+        </div>
+        -->
+
+
+
+
+
+
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Ajouter un nouvel évenement à l'Agenda
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header"><h4 class="modal-title"> Ajout d'un nouvel évenement à l'Agenda : </h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form>
+                        <fieldset>
+
+                            <div class="form-group">
+                                <label for="exampleInputDate">Date</label>
+                                <input type="date" class="form-control" id="exampleInputDate" aria-describedby="emailHelp" placeholder="Enter une date...">
+                                <small id="date" class="form-text text-muted">test texte...</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputLieu">Lieu</label>
+                                <input type="text" class="form-control" id="exampleInputLieu" placeholder="Entrer un lieu...">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputNom">Nom</label>
+                                <input type="text" class="form-control" id="exampleInputNom" placeholder="Entrer un nom...">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleTextarea">Description</label>
+                                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputFile">Image</label>
+                                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                                <small id="fileHelp" class="form-text text-muted">test texte...</small>
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+                                    <label class="custom-control-label" for="customSwitch1">Activer l'évenement</label>
+                                </div>
+                            </div>
+
+
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </fieldset>
+                    </form>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer"><button type="button" class="btn btn-primary">Valider</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</div>

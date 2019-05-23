@@ -1,0 +1,366 @@
+body
+{
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* --------------- Début Menu ------------------ */
+
+#navMenu
+{
+    list-style: none ;
+    margin: 0 ;
+    padding: 0 ;
+    overflow: hidden ;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#navMenu li
+{
+    width: 160px ;
+    height: 50px;
+    border: 1px solid #600 ;
+    margin-right: 1px ;
+    color: #fff ;
+    background: #c00 ;
+}
+
+#navMenu li a
+{
+    height: 50px;
+
+    background: #c00 ;
+    color: #fff ;
+    font: 1em "Trebuchet MS",Arial,sans-serif ;
+    line-height: 1em ;
+    /* padding: 4px 0 ; */
+    text-align: center ;
+    text-decoration: none ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navMenu li a:hover, #navMenu li a:focus, #navMenu li a:active {
+    line-height: 50px;
+    background: #900 ;
+    height: 50px;
+    text-decoration: none ;
+    font-size: 20px;
+}
+
+button
+{
+    border-radius: 50px;
+    background-color: #bfcc00;
+}
+
+.Menuu
+{
+
+}
+/* --------------- Fin Menu ------------------ */
+
+a
+{
+    color: yellow;
+}
+
+a over
+
+.Nom
+{
+    background-color: darkslateblue;
+    color: yellow;
+
+
+}
+
+.div1
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+
+    width: 54%;
+}
+
+#resultat
+{
+    color: red;
+}
+
+#contenaire
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#contenaires
+{
+    font-size: 16px;
+}
+
+#contenaire_index2
+{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#chargement
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('chargement.gif');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+
+}
+
+#testtt
+{
+    color: red;
+}
+
+/* ------- Page Agenda ------- */
+.news
+{
+    width: 100%;
+    min-height: 40px;
+    max-height: 80px;
+    position: relative;
+
+    border: 5px;
+    border-color: white;
+
+    background-color: blueviolet;
+
+}
+
+.preview
+{
+    height: 100%;
+}
+
+img
+{
+    height: 50%;
+    /*transform: rotate(90deg);*/
+
+}
+
+.info
+{
+    float: right;
+    width: 70%;
+    position: relative;
+}
+
+.hr
+{
+    display: inline-block;
+    width: 100%;
+    color: aliceblue;
+    background-color: #990000;
+}
+
+
+.Agenda_Titre
+{
+    background-color: #3f3f3f;
+    width: 100%;
+    border-top-right-radius: 20px;
+}
+
+.taille_div_image
+{
+    background-color: #343434;
+    height: 200px;
+    line-height: 200px;
+    margin-top: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.taille_div_contenu
+{
+    background-color: #3f3f3f;
+    height: 200px;
+    margin-top: 15px;
+    padding:0 0 0 0 !important;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.agenda_div_general
+{
+    background-color: #484848;
+    margin: 15px 0 15px 0;
+}
+
+.ng-view
+{
+    background-color: #484848;
+    max-height: 1600px;
+}
+
+
+
+/*-------------- css pour module page Liens -----------------------*/
+
+#menu-tab {
+    /*background: white;*/
+    font-family: 'trebuchet ms', geneva;
+    font-size: 11pt;
+    color:black;
+}
+
+#menu-tab a {
+    color: grey;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    font-variant: normal;
+}
+#menu-tab a:hover{
+    color: green;
+
+}
+
+/*--------------Dimensions tableau--------------*/
+
+#page-wrap {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+
+}
+
+/*--------------Onglets--------------*/
+
+.tabs {
+    position: relative;
+    min-height: 480px; /* This part sucks */
+    clear: both;
+    margin: 25px 0;
+}
+.tab {
+    float: left;margin-top:-10px;
+
+}
+.tab label {
+    background: rgba(155, 127, 40, 0.38);
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 3px -3px 6px rgba(0, 0, 0, 0.71);
+}
+.tab [type=radio] {
+    display: none;
+}
+
+/*--------------Contenu article onglet--------------*/
+.content {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: white;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0px 10px 10px 10px;
+    box-shadow:6px 6px 10px rgba(0, 0, 0, 0.41);
+    overflow: hidden;
+    overflow-y: auto;
+    margin-bottom: -20px;
+    background-color: rgb(12, 0, 48);
+    color: white;
+}
+.content > * {
+    opacity: 0;
+
+    -webkit-transform: translate3d(0, 0, 0);
+
+    -webkit-transform: translateX(-100%);
+    -moz-transform:    translateX(-100%);
+    -ms-transform:     translateX(-100%);
+    -o-transform:      translateX(-100%);
+
+    -webkit-transition: all 0.6s ease;
+    -moz-transition:    all 0.6s ease;
+    -ms-transition:     all 0.6s ease;
+    -o-transition:      all 0.6s ease;
+}
+
+/*-------------Onglets actifs--------------*/
+
+[type=radio]:checked ~ label {
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+}
+[type=radio]:checked ~ label ~ .content > * {
+    opacity: 1;
+
+    -webkit-transform: translateX(0);
+    -moz-transform:    translateX(0);
+    -ms-transform:     translateX(0);
+    -o-transform:      translateX(0);
+}
+/*--------------Images--------------*/
+
+.content img {
+    box-shadow:6px 6px 10px grey;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition:    all 0.6s ease;
+    -ms-transition:     all 0.6s ease;
+    -o-transition:      all 0.6s ease;
+    border-radius: 20px;
+}
+
+.content img:hover {
+    opacity: 0.8;
+    -webkit-transform: rotate(7deg);
+    -moz-transform:    translateX(0);
+    -ms-transform:     translateX(0);
+    -o-transform:      translateX(0);
+
+    -webkit-transition: all 0.6s ease;
+    -moz-transition:    all 0.6s ease;
+    -ms-transition:     all 0.6s ease;
+    -o-transition:      all 0.6s ease;
+}
+.titr
+{
+    font-family: "Candy Round BTN";
+}
+
+.img_lien
+{
+    max-width: 300px;
+    height: auto !important;
+}
+
+
+.img_accueil
+{
+    border-radius: 50%;
+}

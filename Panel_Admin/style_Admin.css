@@ -1,0 +1,259 @@
+body
+{
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* --------------- Début Menu ------------------ */
+
+#navMenu
+{
+    list-style: none ;
+    margin: 0 ;
+    padding: 0 ;
+    overflow: hidden ;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#navMenu li
+{
+    width: 160px ;
+    height: 50px;
+    border: 1px solid #600 ;
+    margin-right: 1px ;
+    color: #fff ;
+    background: #c00 ;
+}
+
+#navMenu li a
+{
+    height: 50px;
+
+    background: #c00 ;
+    color: #fff ;
+    font: 1em "Trebuchet MS",Arial,sans-serif ;
+    line-height: 1em ;
+    /* padding: 4px 0 ; */
+    text-align: center ;
+    text-decoration: none ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navMenu li a:hover, #navMenu li a:focus, #navMenu li a:active {
+    line-height: 50px;
+    background: #900 ;
+    height: 50px;
+    text-decoration: none ;
+    font-size: 20px;
+}
+
+button
+{
+    border-radius: 50px;
+    background-color: #bfcc00;
+}
+
+.Menuu
+{
+
+}
+
+
+.bg-primary1
+{
+    background-color: #cb0000;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fffbff), color-stop(40%, #d2d2d6), to(#fffdfb)) !important;
+    background-image: linear-gradient(#fff, #dbdbdb 40%, #fff); !important;
+
+    font-weight:bold;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: #ff0400 !important;
+}
+/* --------------- Fin Menu ------------------ */
+
+
+
+
+
+
+
+
+
+
+a
+{
+    color: yellow;
+}
+
+a over
+
+.Nom
+{
+    background-color: darkslateblue;
+    color: yellow;
+
+
+}
+
+.div1
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+
+    width: 54%;
+}
+
+#resultat
+{
+    color: red;
+}
+
+#contenaire
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#contenaires
+{
+    font-size: 16px;
+}
+
+#contenaire_index2
+{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#chargement
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../chargement.gif');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+
+}
+
+#testtt
+{
+    color: red;
+}
+
+
+/* Page Gestion Agenda dans le panel pour le Tableau */
+.styl
+{
+    height: 80px;
+    background-color: indigo;
+    text-align: center;
+    font-family: Verdana;
+
+}
+
+.taille_ID
+{
+    width: 80px;
+}
+
+.taille_Prenom-Nom
+{
+    width: 200px;
+}
+
+.taille_Age
+{
+    width: 70px;
+}
+
+.tr_genere
+{
+    height: 40px;
+    background-color: dimgray;
+}
+
+.T_id
+{
+    text-align: center;
+}
+
+.T_P
+{
+    padding-left: 10px;
+}
+
+.T_N
+{
+    padding-left: 10px;
+}
+
+.T_A
+{
+    text-align: center;
+
+}
+
+
+.taille_Competence
+{
+    width: 200px;
+}
+
+.taille_Niveau
+{
+    width: 80px;
+}
+
+.T_P
+{
+    text-align: center;
+}
+
+.T_N
+{
+    text-align: center;
+}
+
+tr.souris:hover
+{
+    background-color:#778899;
+}
+
+td.souriss:hover
+{
+    background-color:#778899;
+}
+
+.table
+{
+    alignment: center;
+}
+
+.imgModif
+{
+    border-radius: 50px;
+}
+/* --------------------------------------------- */

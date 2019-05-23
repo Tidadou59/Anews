@@ -1,0 +1,187 @@
+<p></p>
+
+<div id="contenaires" style="text-align: center">
+
+        <h1>Galerie photos de vos événements : </h1>
+
+    <div id="chargement" data-ng-if="chargement"></div>
+
+    <span data-ng-if="!agenda">Aucune gelerie disponible...</span>
+
+    <p><h1>{{loader}}</h1></p>
+
+        <div class="row agenda_div_general" data-ng-repeat="galerie in blog">
+
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-lg-offset-1 taille_div_image">
+                <img class="preview" data-ng-src="{{galerie.article_image}}">
+            </div>
+
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 col-lg-offset-1 taille_div_contenu">
+                <div class="Agenda_Titre">
+                    <h2>{{galerie.article_titre}}</h2>
+                </div>
+
+                <span>édité le {{galerie.article_date}}</span>
+
+                <p>{{galerie.article_contenu}}</p>
+
+            </div>
+
+        </div>
+
+
+
+
+    <div id="menu-tab">
+        <!---------------- Table Liens Utiles ---------------------------------->
+        <div id="page-wrap">
+            <div class="tabs">
+                <!---------------- Onglet N°1 - Villes -------------------------->
+                <div class="tab">
+                    <input id="tab-1" checked="checked" name="tab-group-1" type="radio" />
+                    <label for="tab-1"> Villes </label>
+                    <div class="content">
+                        <h1>Villes :</h1> <br />
+
+                        <!-- Ville 1 -->
+                        <p><img src="http://mfs2.cdnsw.com/fs/Logo_Ville/small/dew10-Logo_Fourmies.png" alt="" /></p>
+                        <h2 class="titr">Fourmies</h2> <br />
+                        <p>Site internet : <a href="http://fourmies.fr">www.fourmies.fr</a></p>
+                        <p> Facebook : <a href="#">Cliquer ICI</a></p> <br>
+
+                        <!-- Ville 2 -->
+                        <p><img src="http://mfs2.cdnsw.com/fs/Logo_Ville/normal/dew11-Logo_Avesnes.jpg" alt="" /></p>
+                        <h2 class="titr">Avesnes Sur Helpe</h2> <br />
+                        <p>Site internet : <a href="www.avesnes-sur-helpe.fr">www.avesnes-sur-helpe.fr</a></p>
+                        <p> Facebook : <a href="#">Cliquer ICI</a></p> <br>
+
+                        <!-- Ville 3 -->
+                        <p><img src="http://mfs0.cdnsw.com/fs/Logo_Ville/small/dew14-Logo_Le_Quesnoy.jpg" alt="" /></p>
+                        <h2 class="titr">Le Quesnoy</h2> <br />
+                        <p>Site internet : <a href="http://lequesnoy.fr">www.lequesnoy.fr</a></p>
+                        <p> Facebook : <a href="#">Cliquer ICI</a></p> <br>
+
+
+                    </div>
+                </div>
+
+                <!---------------- Onglet N°2 - Artificiers -------------------------->
+                <div class="tab">
+                    <input id="tab-2" name="tab-group-1" type="radio" />
+                    <label for="tab-2"> Artificiers </label>
+                    <div class="content">
+                        <h1>Artificiers :</h1> <br />
+
+                        <!-- Artificier 1 -->
+                        <p><img src="http://mfs0.cdnsw.com/fs/Logo_Artificier/small/dew0y-Logo_Hamza_Artifices.jpg"></p>
+                        <h2 class="titr">Hamza Artifices</h2> <br />
+                        <p>Raismes (59)</p>
+                        <p>Site internet : <a href="http://amza-artifices.com">www.amza-artifices.com</a></p>
+                        <!-- <p> Facebook : <a href="#">Cliquer ICI</a></p> <br> -->
+
+                        <!-- Artificier 2 -->
+                        <p><img src="http://mfs0.cdnsw.com/fs/Logo_Artificier/small/dew0x-Logo_Sono_Sound_System.jpg"></p>
+                        <h2 class="titr">Sono Sound Systèm</h2> <br />
+                        <p>Aulnoye-Aymeries (59)</p>
+                        <!-- <p>Site internet : <a href="http://amza-artifices.com">www.amza-artifices.com</a></p> -->
+                        <p> Facebook : <a href="https://www.facebook.com/Sono-sound-system-115909118445414">Cliquer ICI</a></p> <br>
+
+                        <!-- Artificier 3 -->
+                        <p><img src="http://mfs0.cdnsw.com/fs/Root/small/deh3a-1_a_venir.jpg"></p>
+                        <h2 class="titr">Magic Fireworks</h2> <br />
+                        <p>Curgies (59)</p>
+                        <!-- <p>Site internet : <a href="http://amza-artifices.com">www.amza-artifices.com</a></p> -->
+                        <!-- <p> Facebook : <a href="https://www.facebook.com/Sono-sound-system-115909118445414">Cliquer ICI</a></p> <br> -->
+
+                    </div>
+                </div>
+
+                <!---------------- Onglet N°3 - Associations -------------------------->
+                <div class="tab">
+                    <input id="tab-3" name="tab-group-1" type="radio" />
+                    <label for="tab-3"> Associations </label>
+                    <div class="content">
+                        <h1>Associations :</h1> <br />
+                        <p>Exemple, une image, et une video...</p> <br />
+                        <p><img src="http://ekladata.com/UM-RXN_kZ3q93_FwWhFA15FP_uc.jpg" alt="" /></p>
+                        <p>test </p>
+
+                    </div>
+                </div>
+
+                <!---------------- Onglet N°4 - ???? -------------------------->
+                <div class="tab"><input id="tab-4" name="tab-group-1" type="radio" />
+                    <label for="tab-4">Video-1</label>
+                    <div class="content">
+                        <p>Une vidéo de Constance..!</p> <br />
+                    </div>
+                </div>
+
+                <!---------------- Onglet N°5 - ????? -------------------------->
+                <div class="tab">
+                    <input id="tab-5" name="tab-group-1" type="radio" />
+                    <label for="tab-5">Video-2</label>
+                    <div class="content"><br />
+
+
+                        <div class="row agenda_div_general" data-ng-repeat="event in agenda">
+
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-lg-offset-1 taille_div_image">
+                                <img class="preview" data-ng-src="{{event.Agenda_Image}}">
+                            </div>
+
+                            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 col-lg-offset-1 taille_div_contenu">
+                                <div class="Agenda_Titre">
+                                    <h2>{{event.Agenda_Nom}}</h2>
+                                </div>
+                                <span>Le {{event.Agenda_Date}} à {{event.Agenda_Lieu}}</span>
+                                <p>{{event.Agenda_Detail}}</p>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+                <!---------------- Onglet N°6 - ?????? -------------------------->
+                <!--
+                <div class="tab">
+                    <input id="tab-6" name="tab-group-1" type="radio" />
+                    <label for="tab-6">Codes</label>
+                    <div class="content">
+                        <p>Code CSS</p> <br />
+                        <iframe src="//www.youtube.com/embed/LU2BQY_Doio?rel=0" frameborder="0" width="420" height="315" allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- A supprimer dès que ça sera dans le panel admin
+    <p> <input type="date" placeholder=" Date de l'événement..." required name="ajoutAgenda_Date" data-ng-model="ajoutAgenda_Date"> </p>
+    <p> <input type="text" placeholder=" Lieu de l'événement..." required name="ajoutAgenda_Lieu" data-ng-model="ajoutAgenda_Lieu"> </p>
+    <p> <input type="text" placeholder=" Nom de l'événement..." required name="ajoutAgenda_Nom" data-ng-model="ajoutAgenda_Nom"> </p>
+    <p> <input type="url" placeholder=" Image de l'évément..." name="ajoutAgenda_Image" data-ng-model="ajoutAgenda_Image"> </p>
+
+    <p> <textarea placeholder=" Détail de l'évément..." required name="ajoutAgenda_Detail" data-ng-model="ajoutAgenda_Detail" ></textarea> </p>
+
+    <p> <button data-ng-click="ajouterAgenda()"> Ajouter un nouvel événement </button> </p>
+    -->
+
+    <!--
+    </div>
+    -->
+</div>

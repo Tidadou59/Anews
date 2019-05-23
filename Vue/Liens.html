@@ -1,0 +1,138 @@
+<p></p>
+
+<div id="contenaires" style="text-align: center">
+
+        <h1>Liens Utiles : </h1>
+
+    <div id="chargement" data-ng-if="chargement"></div>
+
+    <!-- <span data-ng-if="!Liens">Aucun lien disponible...</span> -->
+
+    <p><h1>{{loader}}</h1></p>
+
+
+    <div id="menu-tab">
+        <!---------------- Table Liens Utiles ---------------------------------->
+        <div id="page-wrap">
+            <div class="tabs">
+                <!---------------- Onglet N°1 - Villes -------------------------->
+                <div class="tab">
+                    <input id="tab-1" checked="checked" name="tab-group-1" type="radio" />
+                    <label for="tab-1"> Villes </label>
+                    <div class="content">
+                        <h1>Villes :</h1>
+                        <div data-ng-repeat="lien in liens.Villes">
+                            <p><img class="img_lien" src="{{lien.Lien_Image}}" alt="" /></p>
+                            <h2 class="titr">{{lien.Lien_Nom}}</h2> <br />
+                            <p>Site internet : <a href="{{lien.Lien_Web}}">{{lien.Lien_Web}}</a></p>
+                            <!-- <p> Facebook : <a href="#">Cliquer ICI</a></p> <br> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!---------------- Onglet N°2 - Artificiers -------------------------->
+                <div class="tab">
+                    <input id="tab-2" name="tab-group-1" type="radio" />
+                    <label for="tab-2"> Artificiers </label>
+                    <div class="content">
+                        <h1>Artificiers :</h1> <br />
+                        <div data-ng-repeat="lien in liens.Artificiers">
+                            <p><img class="img_lien" src="{{lien.Lien_Image}}" alt="" /></p>
+                            <h2 class="titr">{{lien.Lien_Nom}}</h2> <br />
+                            <p>Site internet : <a href="{{lien.Lien_Web}}">{{lien.Lien_Web}}</a></p>
+                            <!-- <p> Facebook : <a href="#">Cliquer ICI</a></p> <br> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!---------------- Onglet N°3 - Associations -------------------------->
+                <div class="tab">
+                    <input id="tab-3" name="tab-group-1" type="radio" />
+                    <label for="tab-3"> Associations </label>
+                    <div class="content">
+                        <h1>Associations :</h1> <br />
+                        <div data-ng-repeat="lien in liens.Associations">
+                            <p><img class="img_lien" src="{{lien.Lien_Image}}" alt="" /></p>
+                            <h2 class="titr">{{lien.Lien_Nom}}</h2> <br />
+                            <p>Site internet : <a href="{{lien.Lien_Web}}">{{lien.Lien_Web}}</a></p>
+                            <!-- <p> Facebook : <a href="#">Cliquer ICI</a></p> <br> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!---------------- Onglet N°4 - ???? -------------------------->
+                <!--
+                <div class="tab"><input id="tab-4" name="tab-group-1" type="radio" />
+                    <label for="tab-4">Video-1</label>
+                    <div class="content">
+                        <p>Une vidéo de Constance..!</p> <br />
+                    </div>
+                </div>
+                -->
+                <!---------------- Onglet N°5 - ????? -------------------------->
+                <!--
+                <div class="tab">
+                    <input id="tab-5" name="tab-group-1" type="radio" />
+                    <label for="tab-5">Video-2</label>
+                    <div class="content"><br />
+
+                        <div class="row agenda_div_general" data-ng-repeat="event in agenda">
+
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-lg-offset-1 taille_div_image">
+                                <img class="preview" data-ng-src="{{event.Agenda_Image}}">
+                            </div>
+
+                            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 col-lg-offset-1 taille_div_contenu">
+                                <div class="Agenda_Titre">
+                                    <h2>{{event.Agenda_Nom}}</h2>
+                                </div>
+                                <span>Le {{event.Agenda_Date}} à {{event.Agenda_Lieu}}</span>
+                                <p>{{event.Agenda_Detail}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                -->
+                <!---------------- Onglet N°6 - ?????? -------------------------->
+                <!--
+                <div class="tab">
+                    <input id="tab-6" name="tab-group-1" type="radio" />
+                    <label for="tab-6">Codes</label>
+                    <div class="content">
+                        <p>Code CSS</p> <br />
+                        <iframe src="//www.youtube.com/embed/LU2BQY_Doio?rel=0" frameborder="0" width="420" height="315" allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--
+    <div class="row agenda_div_general" data-ng-repeat="lien in liens">
+
+
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-lg-offset-1 taille_div_image">
+            <img class="preview" src="{{event.Lien_Image}}">
+        </div>
+
+        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 col-lg-offset-1 taille_div_contenu">
+            <div class="Agenda_Titre">
+                <h2>Ville de {{event.Lien_Nom}}</h2>
+            </div>
+            <span>Site internet : {{event.Lien_Web}}</span>
+        </div>
+
+    </div>
+-->
+</div>
+
+
+

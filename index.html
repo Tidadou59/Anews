@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bienvenue </title>
+
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/slate/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="bootstraps.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <link rel="icon" type="image/png" href="images/megaphone.png" />
+
+    <script>// <![CDATA[
+    var txt=" * * * Avesn'News   -   l'Actu des manifestations   ";
+    var vitesse=200;
+    var refres=null;
+    function onglet_title() {
+        document.title=txt;
+        txt=txt.substring(1,txt.length)+txt.charAt(0);
+        refres=setTimeout("onglet_title()",vitesse);}
+    onglet_title();
+    // ]]></script>
+</head>
+<body>
+<!-- ################################## Début Body ################################## -->
+<div id="menu" data-ng-app="myApp" data-ng-init="">
+    <!-- Menu -->
+    <nav>
+        <div class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#"><h2>Avesn-News</h2>l'Actu des manifestations</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item"> <a class="nav-link" href="#!/"> <img src="images/home.png" width="20" height="20" alt="accueil"> Accueil </a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="#!/connexion" title="Connexion"> Connexion </a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#!/
+                    inscription" title="Inscription"> Inscription </a></li> -->
+
+                    <li class="nav-item"><a class="nav-link" href="#!/agenda" title="Agenda"> Agenda </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!/Liens" title="Liens"> Liens Utiles </a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="#!/article" title="article"> Articles </a> </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#!/contact" title="Contact"> Contact </a> </li>
+                </ul>
+            </div>
+
+            <!--
+                    <p>
+                        Bienvenue xxxx . Tu es connecté en tant qu'Administrateur.
+                        <a href="#">Déconnexion</a>
+                    </p>
+             -->
+            <!--
+                    <p>
+                        <span> Bienvenue  {{ app.user.UserPseudo }} . Connecté en tant qu'Utilisateur. </span> <br>
+                    </p>
+
+                        <p>
+                            <a href="Panel_Admin">Accès Panel Admin</a>
+                            <a href="#">Déconnexion</a>
+                        </p>
+                    -->
+        </div>
+    </nav>
+
+        <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-lg-offset-1"></div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-lg-offset-1 ng-view">
+                <!--<div class="ng-view"></div>-->
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-lg-offset-1"></div>
+        </div>
+</div>
+
+
+<!-- ==================== SCRIPT ==================== -->
+<script src="Controller/angular.js"></script>
+
+<!-- <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script> -->
+<script src="scripts/jquery.min.js"></script>
+
+<!-- <script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script> -->
+<script src="scripts/popper.min.js"></script>
+
+<!-- <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script> -->
+<script src="scripts/bootstrap.min.js"></script>
+
+<!-- <script src="https://bootswatch.com/_assets/js/custom.js"></script> -->
+<script src="scripts/custom.js"></script>
+</body>
+</html>

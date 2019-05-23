@@ -1,0 +1,39 @@
+<p></p>
+
+<div id="contenaires" style="text-align: center">
+
+        <h1>Agenda : </h1>
+
+    <div id="chargement" data-ng-if="chargement"></div>
+
+    <span data-ng-if="!agenda">Aucune date disponible...</span>
+
+    <p><h1>{{loader}}</h1></p>
+
+        <div class="row agenda_div_general" data-ng-repeat="event in agenda">
+
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-lg-offset-1 taille_div_image">
+                <img class="preview" data-ng-src="{{event.Agenda_Image}}">
+            </div>
+
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 col-lg-offset-1 taille_div_contenu">
+                <div class="Agenda_Titre">
+                    <h2>{{event.Agenda_Nom}}</h2>
+                </div>
+                <span>Le {{event.Agenda_Date}} à {{event.Agenda_Lieu}}</span>
+                <p>{{event.Agenda_Detail}}</p>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    <!--
+    </div>
+    -->
+</div>
